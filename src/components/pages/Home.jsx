@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "../../assets/css/Main.css"
 import axios from "axios";
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useMediaQuery } from 'react-responsive'
 
 const Home = () => { 
   const [city,setCity]=useState("")
@@ -16,8 +17,14 @@ const Home = () => {
       console.log("error",error)
     })
   }
+
+  const isMobileDevice = useMediaQuery({
+    query: "(min-device-width: 480px)",
+});
+ 
   return (
     <div className='main'>
+      <h1 className='res'>{isMobileDevice}</h1>
       <div className='main-in'>
         <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
@@ -44,6 +51,8 @@ const Home = () => {
         <p> {new Date().toLocaleString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
         <h1>{temp}</h1>
       </div>
+
+    
     </div>
   )
 }
