@@ -1,7 +1,7 @@
 .main{
-    background-image: url(../images/backk.jpeg);
+    background-image: url(../images/tree.jpg);
     height: 100vh;
-    /* width: 100%; */
+    /* width: 9   0%; */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -14,20 +14,26 @@
 
 .search input{
  border-radius: 100px;
- border: 2px solid white;
+ border: 2px solid green;
  padding: 10px 0px;
  text-align: center;font-size: larger;
- color: blue;
+ color: green;
  background-color: transparent;
 
 }
-
+ 
 .date{
    text-align: center;
- margin-top: 20px;
- color: white;
+ margin-top: 240px;
+ color: green;
  font-size: 25px;
 
 }
-
+.button{
+   margin-left: 93px;
+   border: 2px solid green;
+   color: green;
+   border-radius: 20px;
+   padding: 7px 25px;
+}
  
